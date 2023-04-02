@@ -14,6 +14,8 @@ def selectionSort(arr):
         newArr.append(arr.pop(smallest_ind))
     return newArr
 
-print(selectionSort([55, 66 , 33, 12, 45, 87, 5, 3, 45, 99, 0, 111111, 99, 8, 78, 786]))
+a = [55, 66 , 33, 12, 45, 87, 5, 3, 45, 99, 0, 111111, 99, 8, 78, 786]
+b = a[:]
 
-print(findSmallest([55, 66 , 33, 12, 45, 87, 5, 3, 45, 99, 0, 111111, 99, 8, 78, 786]))
+print(selectionSort(b))
+print(a[findSmallest(a)])
